@@ -31,6 +31,10 @@ typedef void (*compact_f) (Interp *, GC_Statistics *stats, Variable_Size_Pool *)
 #define RECLAMATION_FACTOR 0.20
 #define WE_WANT_EVER_GROWING_ALLOCATIONS 0
 
+#ifndef uint
+#define uint unsigned int
+#endif
+
 /* HEADERIZER HFILE: src/gc/gc_private.h */
 
 /* HEADERIZER BEGIN: static */
